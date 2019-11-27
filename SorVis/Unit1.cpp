@@ -36,7 +36,7 @@ void __fastcall TForm1::FormCreate(TObject *Sender)
 
         shape->Top = 20;
         shape->Left = 50 + i * 10;
-        shape->Height = 100;
+        shape->Height = (rand()%400 + 1);
         shape->Width = 8;
         shape->Brush->Color = clYellow;
 
@@ -61,6 +61,7 @@ void __fastcall TForm1::Button1Click(TObject *Sender)
      {
          shapes[i]->Height = (rand()%400 + 1);
          arr[i] = shapes[i]->Height;
+         shapes[i]->Brush->Color = clYellow;
      }
 }
 //---------------------------------------------------------------------------
@@ -76,6 +77,7 @@ void __fastcall TForm1::Button2Click(TObject *Sender)
         Image4->Visible = false;
         Image5->Visible = false;
         Image6->Visible = false;
+        Button1->Visible = false;
 
         if (ComboBox1->Items->Strings[ComboBox1->ItemIndex] == "Bubble Sort")
         {
@@ -166,6 +168,7 @@ if (ComboBox1->Items->Strings[ComboBox1->ItemIndex] == "Bubble Sort")        // 
     if (j == 50)
     {
     ComboBox1->Visible = true;
+    Button1->Visible = true;
     Timer1->Enabled = false;                 // if runs = 50, disable Timer
     }
 }
@@ -217,6 +220,7 @@ if (ComboBox1->Items->Strings[ComboBox1->ItemIndex] == "Selection Sort")
      j++;                                // Increment number of sorted numbers
      Label1->Caption = j;                // Show numbers sorted
      ComboBox1->Visible = true;
+     Button1->Visible = true;
      Timer1->Enabled = false;            // finish algo
     }
 }
@@ -259,6 +263,7 @@ shapes[j-1]->Brush->Color = clGreen;  // Color it green
     {
      shapes[j-1]->Brush->Color = clGreen;  // Color it green
      ComboBox1->Visible = true;
+     Button1->Visible = true;
      Timer1->Enabled = false;            // finish algo
     }
 }
@@ -317,10 +322,13 @@ Timer2->Interval = ScrollBar1->Position;
                  shapes[m]->Height = arr[m];
                  }
          //}
-         if (left + k >= num)
+         if ((left + k >= num - 1 && k != 4) || (k == 4 && left + k >= num - 10))
          {
             if (k >= num)
+            {
+               Button1->Visible = true;
                Timer2->Enabled = false;
+            }
             else
                {
                k *= 2;

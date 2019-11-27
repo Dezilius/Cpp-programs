@@ -2,9 +2,10 @@ object Form1: TForm1
   Left = 1346
   Top = 382
   AutoScroll = False
+  AutoSize = True
   Caption = 'Form1'
-  ClientHeight = 450
-  ClientWidth = 900
+  ClientHeight = 449
+  ClientWidth = 889
   Color = clBtnFace
   DockSite = True
   Font.Charset = DEFAULT_CHARSET
@@ -17,8 +18,8 @@ object Form1: TForm1
   PixelsPerInch = 96
   TextHeight = 13
   object Image1: TImage
-    Left = 136
-    Top = 8
+    Left = 128
+    Top = 0
     Width = 10
     Height = 15
     AutoSize = True
@@ -73,8 +74,8 @@ object Form1: TForm1
     Visible = False
   end
   object Image2: TImage
-    Left = 160
-    Top = 8
+    Left = 152
+    Top = 0
     Width = 10
     Height = 15
     AutoSize = True
@@ -129,8 +130,8 @@ object Form1: TForm1
     Visible = False
   end
   object Image3: TImage
-    Left = 184
-    Top = 8
+    Left = 176
+    Top = 0
     Width = 10
     Height = 15
     AutoSize = True
@@ -186,8 +187,8 @@ object Form1: TForm1
     Visible = False
   end
   object Label3: TLabel
-    Left = 632
-    Top = 112
+    Left = 624
+    Top = 104
     Width = 10
     Height = 20
     Caption = '0'
@@ -199,8 +200,8 @@ object Form1: TForm1
     ParentFont = False
   end
   object Panel1: TPanel
-    Left = 600
-    Top = 8
+    Left = 592
+    Top = 0
     Width = 297
     Height = 169
     TabOrder = 4
@@ -245,8 +246,8 @@ object Form1: TForm1
     end
   end
   object Button1: TButton
-    Left = 624
-    Top = 24
+    Left = 616
+    Top = 16
     Width = 129
     Height = 41
     Caption = 'New numbers'
@@ -260,8 +261,8 @@ object Form1: TForm1
     OnClick = Button1Click
   end
   object Button2: TButton
-    Left = 784
-    Top = 24
+    Left = 776
+    Top = 16
     Width = 89
     Height = 41
     Caption = 'Sort'
@@ -275,8 +276,8 @@ object Form1: TForm1
     OnClick = Button2Click
   end
   object ComboBox1: TComboBox
-    Left = 680
-    Top = 80
+    Left = 672
+    Top = 72
     Width = 145
     Height = 21
     ItemHeight = 13
@@ -284,8 +285,8 @@ object Form1: TForm1
     Text = 'Select Sort Algorythm'
   end
   object ScrollBar1: TScrollBar
-    Left = 688
-    Top = 144
+    Left = 680
+    Top = 136
     Width = 121
     Height = 17
     Max = 500
@@ -295,14 +296,14 @@ object Form1: TForm1
     TabOrder = 3
   end
   object Panel2: TPanel
-    Left = 600
-    Top = 192
+    Left = 592
+    Top = 184
     Width = 297
-    Height = 249
+    Height = 265
     TabOrder = 5
     object Label7: TLabel
-      Left = 48
-      Top = 24
+      Left = 18
+      Top = 1
       Width = 137
       Height = 20
       Caption = 'Numbers sorted:'
@@ -314,8 +315,8 @@ object Form1: TForm1
       ParentFont = False
     end
     object Label1: TLabel
-      Left = 215
-      Top = 24
+      Left = 185
+      Top = 1
       Width = 10
       Height = 20
       Caption = '0'
@@ -327,8 +328,8 @@ object Form1: TForm1
       ParentFont = False
     end
     object Image4: TImage
-      Left = 31
-      Top = 74
+      Left = 1
+      Top = 51
       Width = 10
       Height = 15
       AutoSize = True
@@ -383,8 +384,8 @@ object Form1: TForm1
       Visible = False
     end
     object Image5: TImage
-      Left = 32
-      Top = 112
+      Left = 2
+      Top = 89
       Width = 10
       Height = 15
       AutoSize = True
@@ -439,8 +440,8 @@ object Form1: TForm1
       Visible = False
     end
     object Image6: TImage
-      Left = 32
-      Top = 152
+      Left = 2
+      Top = 129
       Width = 10
       Height = 15
       AutoSize = True
@@ -497,8 +498,8 @@ object Form1: TForm1
     end
   end
   object ProgressBar1: TProgressBar
-    Left = 8
-    Top = 424
+    Left = 0
+    Top = 432
     Width = 585
     Height = 17
     Min = 0
