@@ -1,0 +1,10 @@
+LUL 64
+empty 43
+Milosz 8
+Jadzia 7
+empty 0
+empty 0
+empty 0
+empty 0
+empty 0
+empty 0
